@@ -6,6 +6,7 @@ const ipAddress = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 const app = express()
 
 app.get('/', (req, res) => {
+  console.log('Received a HTTP request!')
   res.send('Hello world')
 })
 
