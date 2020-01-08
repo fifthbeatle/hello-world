@@ -17,6 +17,6 @@ app.get('/home', (req, res) => {
   res.send('Welcome to the home page!')
 })
 
-app.listen(port, ipAddress, () => {
-  console.log('Your server is running on port: ' + port)
-})
+app.listen(8080)
+
+console.log('Server is up on 8080')
