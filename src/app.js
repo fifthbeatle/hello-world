@@ -1,10 +1,7 @@
 const express = require('express')
 
-console.log('OPENSHIFT_NODEJS_PORT:', process.env.OPENSHIFT_NODEJS_PORT)
-console.log('OPENSHIFT_NODEJS_IP:', process.env.OPENSHIFT_NODEJS_IP)
-
-console.log('PORT:', process.env.PORT)
-console.log('IP:', process.env.IP)
+console.log('Process environment:\n')
+console.log(process.env)
 
 const port = process.env.OPENSHIFT_NODEJS_PORT || 8080
 const ipAddress = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
