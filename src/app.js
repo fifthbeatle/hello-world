@@ -1,7 +1,6 @@
 const express = require('express')
 
-console.log('Process environment:\n')
-console.log(process.env)
+console.log('RUNNING THE HELLO WORLD APPLICATION!')
 
 const port = process.env.OPENSHIFT_NODEJS_PORT || 8080
 const ipAddress = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
